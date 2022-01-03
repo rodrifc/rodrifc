@@ -963,7 +963,7 @@ a {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #353535;
+  background-color: #74b6d2;
 }
 .cid-sTobz0CzLH button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -1096,6 +1096,48 @@ a {
 }
 .cid-sTolvj6XiM .card-title {
   color: #74b6d2;
+}
+.cid-sTt0vJMGNV {
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-image: url("../../../assets/images/parawebperfil-1-2000x972.jpg");
+}
+.cid-sTt0vJMGNV .mbr-overlay {
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+.cid-sTt0vJMGNV .content-wrap {
+  padding: 5rem 1rem;
+}
+@media (min-width: 768px) {
+  .cid-sTt0vJMGNV {
+    align-items: flex-end;
+  }
+  .cid-sTt0vJMGNV .row {
+    justify-content: flex-start;
+  }
+  .cid-sTt0vJMGNV .content-wrap {
+    width: 36%;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-sTt0vJMGNV .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-sTt0vJMGNV {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .cid-sTt0vJMGNV .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-sTt0vJMGNV .content-wrap {
+    width: 100%;
+  }
 }
 .cid-sTo8c3ObpA {
   padding-top: 9rem;
