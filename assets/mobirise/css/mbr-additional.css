@@ -682,48 +682,6 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-sTt0vJMGNV {
-  display: flex;
-  padding-top: 0px;
-  padding-bottom: 15px;
-  background-image: url("../../../assets/images/parawebperfil-1-2000x972.jpg");
-}
-.cid-sTt0vJMGNV .mbr-overlay {
-  background-color: #ffffff;
-  opacity: 0.3;
-}
-.cid-sTt0vJMGNV .content-wrap {
-  padding: 5rem 1rem;
-}
-@media (min-width: 768px) {
-  .cid-sTt0vJMGNV {
-    align-items: flex-end;
-  }
-  .cid-sTt0vJMGNV .row {
-    justify-content: flex-start;
-  }
-  .cid-sTt0vJMGNV .content-wrap {
-    width: 47%;
-  }
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .cid-sTt0vJMGNV .content-wrap {
-    min-width: 50%;
-  }
-}
-@media (max-width: 767px) {
-  .cid-sTt0vJMGNV {
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  .cid-sTt0vJMGNV .mbr-row {
-    -webkit-justify-content: center;
-    justify-content: center;
-  }
-  .cid-sTt0vJMGNV .content-wrap {
-    width: 100%;
-  }
-}
 .cid-sTobz0CzLH {
   z-index: 1000;
   width: 100%;
@@ -1074,6 +1032,48 @@ a {
     width: 175%;
     max-width: calc(100% + 2rem);
     left: -1rem;
+  }
+}
+.cid-sTGzBghy1F {
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  background-image: url("../../../assets/images/parawebperfil-1-2000x972.jpg");
+}
+.cid-sTGzBghy1F .mbr-overlay {
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+.cid-sTGzBghy1F .content-wrap {
+  padding: 5rem 1rem;
+}
+@media (min-width: 768px) {
+  .cid-sTGzBghy1F {
+    align-items: flex-end;
+  }
+  .cid-sTGzBghy1F .row {
+    justify-content: flex-start;
+  }
+  .cid-sTGzBghy1F .content-wrap {
+    width: 47%;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-sTGzBghy1F .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-sTGzBghy1F {
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .cid-sTGzBghy1F .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-sTGzBghy1F .content-wrap {
+    width: 100%;
   }
 }
 .cid-sTuNK9PRq4 {
