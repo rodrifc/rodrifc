@@ -3,11 +3,11 @@ body {
 }
 .display-1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 4.4rem;
+  font-size: 3.8rem;
   line-height: 1.1;
 }
 .display-1 > .mbr-iconfont {
-  font-size: 5.5rem;
+  font-size: 4.75rem;
 }
 .display-2 {
   font-family: 'Raleway', sans-serif;
@@ -48,14 +48,14 @@ body {
 /* 0.65 - min scale variable, may vary */
 @media (max-width: 992px) {
   .display-1 {
-    font-size: 3.52rem;
+    font-size: 3.04rem;
   }
 }
 @media (max-width: 768px) {
   .display-1 {
-    font-size: 3.08rem;
-    font-size: calc( 2.19rem + (4.4 - 2.19) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.1 * (2.19rem + (4.4 - 2.19) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 2.66rem;
+    font-size: calc( 1.98rem + (3.8 - 1.98) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.1 * (1.98rem + (3.8 - 1.98) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-2 {
     font-size: 2.4rem;
@@ -1036,13 +1036,13 @@ a {
 }
 .cid-sTGzBghy1F {
   display: flex;
-  padding-top: 0px;
-  padding-bottom: 15px;
-  background-image: url("../../../assets/images/parawebperfil-1-2000x972.jpg");
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background-image: url("../../../assets/images/untitled-4.png");
 }
 .cid-sTGzBghy1F .mbr-overlay {
-  background-color: #ffffff;
-  opacity: 0.3;
+  background-color: #8ec6de;
+  opacity: 0.6;
 }
 .cid-sTGzBghy1F .content-wrap {
   padding: 5rem 1rem;
@@ -1055,7 +1055,7 @@ a {
     justify-content: flex-start;
   }
   .cid-sTGzBghy1F .content-wrap {
-    width: 47%;
+    width: 20%;
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
@@ -1076,20 +1076,31 @@ a {
     width: 100%;
   }
 }
+.cid-sTGzBghy1F .mbr-section-title {
+  text-align: left;
+  color: #ffffff;
+}
+.cid-sTGzBghy1F .mbr-text,
+.cid-sTGzBghy1F .mbr-section-btn {
+  color: #ffffff;
+}
 .cid-sTuNK9PRq4 {
   padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 7rem;
   background-image: url("../../../assets/images/wall-1.jpg");
 }
 .cid-sTuNK9PRq4 .mbr-section-subtitle {
-  color: #51a3c5;
+  color: #4097bc;
+  text-align: left;
 }
 .cid-sTuNK9PRq4 .mbr-section-title {
   color: #353535;
+  text-align: left;
 }
 .cid-sTuNK9PRq4 .mbr-text,
 .cid-sTuNK9PRq4 .mbr-section-btn {
   color: #353535;
+  text-align: left;
 }
 .cid-sTo8c3ObpA {
   padding-top: 9rem;
