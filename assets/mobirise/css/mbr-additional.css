@@ -1036,9 +1036,9 @@ a {
 }
 .cid-sTGzBghy1F {
   display: flex;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  background-image: url("../../../assets/images/perfil.png");
+  padding-top: 105px;
+  padding-bottom: 105px;
+  background-image: url("../../../assets/images/perfil.jpg");
 }
 .cid-sTGzBghy1F .mbr-overlay {
   background-color: #4097bc;
@@ -1055,7 +1055,7 @@ a {
     justify-content: flex-start;
   }
   .cid-sTGzBghy1F .content-wrap {
-    width: 40%;
+    width: 29%;
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
@@ -1082,10 +1082,10 @@ a {
 }
 .cid-sTGzBghy1F .mbr-text,
 .cid-sTGzBghy1F .mbr-section-btn {
-  color: #ffffff;
+  color: #c2dde9;
 }
 .cid-sTuNK9PRq4 {
-  padding-top: 6rem;
+  padding-top: 7rem;
   padding-bottom: 7rem;
   background-image: url("../../../assets/images/wall-1.jpg");
 }
