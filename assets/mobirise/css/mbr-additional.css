@@ -1036,8 +1036,8 @@ a {
 }
 .cid-uHkHOoc9dh {
   padding-top: 7rem;
-  padding-bottom: 9rem;
-  background-image: url("../../../assets/images/perfilg.jpg");
+  padding-bottom: 7rem;
+  background-image: url("../../../assets/images/wall-1.jpg");
 }
 .cid-uHkHOoc9dh .mbr-fallback-image.disabled {
   display: none;
@@ -1054,12 +1054,14 @@ a {
 .cid-uHkHOoc9dh .mbr-text,
 .cid-uHkHOoc9dh .mbr-section-btn {
   text-align: left;
+  color: #e5f7f7;
 }
 .cid-uHkHOoc9dh .mbr-section-subtitle {
-  text-align: center;
+  text-align: left;
+  color: #e5f7f7;
 }
 .cid-uHkHOoc9dh .mbr-section-title {
-  text-align: center;
+  text-align: left;
 }
 .cid-uHl1xffwCd {
   padding-top: 5rem;
