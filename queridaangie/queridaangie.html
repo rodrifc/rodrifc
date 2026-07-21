@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Documento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de botones superior -->
+<!-- Barra de botones superior -->
+  <header class="top-bar">
+    
+    <!-- Controles de tamaño de letra -->
+    <div class="controls-group">
+      <button class="icon-btn" onclick="cambiarTamanio(-2)" title="Achicar texto">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      </button>
+      
+      <span class="letra-icono">A</span>
+      
+      <button class="icon-btn" onclick="cambiarTamanio(2)" title="Agrandar texto">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      </button>
+    </div>
+
+    <!-- Botón de Modo Oscuro / Claro -->
+    <button id="btn-theme" class="icon-btn" onclick="toggleTheme()" title="Cambiar a Modo Oscuro">
+      <!-- Ícono de Luna -->
+      <svg id="icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      <!-- Ícono de Sol (Oculto por defecto) -->
+      <svg id="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+    </button>
+    
+  </header>
+
+  <!-- Contenedor del documento (Hoja de Word) -->
+  <main class="document-container">
+    <article class="document-content">
+
+<p style="text-align: right; font-style: italic; color: #555;">La Plata, 20 de julio de 2026</p>
+      
+      <h2 style="margin-bottom: 1em;">Querida Angie:</h2>
+      
+      <p>Te escribo esta carta apegándome a una ancestral tradición humana, una que existe desde mucho antes de que pudiéramos tallar la primera palabra en una piedra: contar de generación en generación historias que nos son significantes. Tu abuelo Antonio escribió a mi hermana una carta cuando ella cumplió 15 años; tal vez esa acción sea un antiguo cimiento de esta idea.</p>
+      
+      <p>No hablo con la pretensión de sostener verdades reveladas. Algunas de las cosas que quiero decirte posiblemente puedas entenderlas mejor cuando seas un poco mayor. Si el escrito te acompaña, confío en que lo releerás en épocas futuras. Seguramente esta carta cobre diferentes significados con el tiempo.</p>
+      
+      <p>Vos y yo no nos conocemos tanto, probablemente por mi culpa. Confieso, sin vergüenza, que nunca fui cercano a las costumbres de visitar a la familia, asistir a las comidas de los domingos ni tampoco a los cumpleaños. No es quien soy yo. Sí quiero que sepas que tu mamá, Cintia-Lololo, como le digo yo, es una de las personas que más quiero de mi familia extendida. Con Lololo crecimos juntos y los recuerdos que tengo con ella son algunos de los más felices de mi infancia. Todavía me duele el abdomen de tanto que nos reímos con ella y Laura aquella noche en que el tío Jorge (mi papá), sentado en el sillón frente a la TV, insultaba con cuanta mala palabra hubiese a los árbitros, periodistas y jugadores de un partido de River Plate. Nadie podía hablar ni distraer al tío Jorge cuando jugaba River, por lo que nuestras conversaciones debían ser disimuladas y en voz baja. Como ya sabrás, la mayoría de los niños no puede disimular muy bien y, menos que menos, ser silenciosos. Mientras más intentábamos callarnos, más nos tentábamos de la risa. Mi papá cada tanto gritaba: «¡Silencio! ¡¿Quién hizo la jugada?! ¡La puta madre mal cagada!». Nosotros más estallábamos de risa. Él sabía que nos estábamos divirtiendo y, si bien insultaba por su equipo de fútbol, también lo hacía como complicidad al servicio de nuestras risas.</p>
+      
+      <p>Cuando pienso en nuestras vidas, pienso casi de inmediato en todas las múltiples formas en que “somos” gracias a las experiencias formativas que tuvimos en la infancia y la adolescencia. Nuestros padres, madres, tíos, primos, maestros, amigos y cada situación fortuita del pasado nos fueron dando pedazos para que nosotros podamos construir el ahora.</p>
+      
+      <p>Como si fuéramos una especie de rompecabezas viviente, estamos llenos de piezas. Si bien son todas nuestras, de alguna forma otros las hicieron para nosotros y nos las dieron, tal vez sin pensarlo demasiado. Aprender qué piezas queremos conservar y qué piezas deben ser pacientemente reemplazadas es una tarea que nos lleva toda la vida, y es también la primera historia de la que quiero hablarte.</p>
+      
+      <p>Yo supe que me gustaban los varones probablemente a los 10 u 11 años. Es difícil ponerle palabras a cosas que son sentimientos. Hay un límite en el lenguaje. ¿No te parece? El término “gay” ciertamente no lo abarca. A esa edad ni siquiera lo pensé, seguramente. Solo lo sentía. Muchos recuerdos de esa época son difusos. Un poco por el tiempo que pasó (tengo 41 años), pero otro poco porque la mente muchas veces elige olvidar para poder cuidarnos.</p>
+      
+      <p>Fui criado en una familia católica. Me bautizaron, tomé la comunión y fui a una escuela religiosa. Recuerdo cada salmo, cada oración y la mayoría de las lecturas en misa. Las historias de la biblia no eran solamente tarea, sino también diversión dominical en la época de pascuas, cuando en la TV pasaban la película de Los Diez Mandamientos, que veíamos algún domingo con papá.</p>
+      
+      <p>Sin embargo, crecí para ser un hombre no creyente. No creo en Dios. No creo en las deidades. No me molestan tampoco. El concepto del Dios, polémico como es, trae paz, alegría y amor a muchísima gente. Me alegro de que así sea.</p>
+      
+      <p>Pero ¿Sabés qué creo? Creo que todos tenemos mucho miedo. Los seres humanos, digo. La única cosa que es cierta, tan cierta como la luz del sol, es que no sabemos por qué estamos. ¿Por qué? ¿Por qué despertamos? ¿Por qué sabemos que estamos acá? ¿Por qué existimos? ¿Cuál es el propósito de poder entenderlo si vamos a morir? ¿Por qué conocemos el amor si eventualmente siempre nos será quitado? ¿Por qué tenemos que estar si vamos a dejar de estar? ¿No estar duele? ¿Morir duele? ¿Por qué debemos morir? ¿Por qué?</p>
+      
+      <p>Dios, para mí, es la forma que el ser humano tuvo de calmar esa y otras efervescencias del alma, muchas de las cuales no le permitirían, de otra forma, vivir. ¿Entonces qué hicimos los humanos? Hicimos lo que venimos haciendo desde el razonamiento más primitivo: nos contamos historias. Historias importantes, historias para que todos sepan. Historias para nuestros hijos, nuestros amigos, nuestros vecinos y nuestros más alocados amores. Historias que nos prometen que no debemos temer. Todos tenemos un propósito, un lugar adonde ir. Alguien nos ama. Dios nos ama. Dios eligió por nosotros. Dios ya decidió todo lo pasado y todo lo por venir. No somos dignos de preguntar por qué, de entender para qué. Dios sí entiende, y Dios nos ama a todos, incluso a nosotros, los pecadores.</p>
+      
+      <p>La historia de Dios puede responder casi cualquier pregunta. Y si alguna vez sentimos que la historia no es suficiente, entonces tal vez nosotros, los seres humanos, tan especiales que somos advirtiendo nuestra propia existencia, podamos explicar cómo es que Dios nos ama, en qué condiciones lo hace, qué dijo Dios, a quién y para qué. Seguramente eso ayude, siempre y cuando hagamos tal cosa o rechacemos tal otra. Dios, para el ser humano es también una herramienta, una con la que se puede hacer el bien, pero también una que habilita ejercer los más atroces de los males en su nombre.</p>
+      
+      <p>Mi abuela Francisca creía en Dios. Si la hubieras conocido, estarías sonriendo al leer su nombre. Fue una abuela más grande y más linda de lo que pueden cristalizar mis palabras. ¿Sabés qué hizo el día que le contaron que yo era gay? Dos cosas: la primera, lloró un momento. La segunda, dijo entre sollozos algo como: “Bueno, cada uno es como Dios lo hizo”.</p>
+      
+      <p>Ahora, ¿por qué mi abuela lloró? Porque toda la estructura de cultura, valores y moral que tuvo durante toda su vida le había enseñado que la homosexualidad era un pecado, una inmoralidad, una enfermedad y una condena.</p>
+      
+      <p>¿Y por qué habló de Dios? Porque Dios, como el manto que acalla el miedo humano desde que su historia es contada, era la única forma en que ella podría, contra todo el peso de su cultura encima, justificar amarme tal y como yo fuera. No pensó en cambiarme, preguntarme, cuestionarme o lamentarme. Pensó en que ella no era digna de pedir explicaciones a Dios.</p>
+      
+      <p>Esa es la segunda historia de la que quiero hablarte, la del amor y la bondad. Las personas que nos aman genuinamente no tienen condiciones para hacerlo; simplemente lo hacen. Nuestra felicidad es su felicidad y nuestro sufrimiento, el suyo.</p>
+      
+      <p>Sin embargo, existir en este mundo sin una respuesta a ¿Por qué? nunca es tan sencillo, y las personas que nos aman también están hechas de un rompecabezas como nosotros, uno con piezas todas propias, pero que también, en realidad, fueron construidas por quienes vinieron antes. Nuestras envidias, recelos, egoísmos, violencias, indiferencias y tantas otras mezquindades del alma son las miserias que cada uno lleva, pueda cada uno verlo o no. Todos las tenemos encima; es nuestra responsabilidad para con quienes amamos encontrarlas y aprender a reemplazar con paciencia cada pieza.</p>
+      
+      <p>Ahora, formar a una criatura, en mi opinión, es algo que no debiera estar concedido al libre albedrío de cada persona. Lo que vivimos de niños y adolescentes tiene un impacto profundo y duradero en nuestras vidas.</p>
+      
+      <p>Una de las cosas que más tardé en aprender es que a las personas no les gusta nada que, de una forma u otra, cambie la narrativa de sus culturas. Hablamos mucho sobre el acceso al conocimiento, el intercambio de ideas y el pensamiento crítico, pero en realidad, para mucha gente, eso es una fantasía, una fábula, una triste mentira. Algunas personas solo quieren escuchar todo aquello que reafirme sus ideas del mundo y considerarán una amenaza a todo lo demás.</p>
+      
+      <p>Mi infancia transcurrió en un mundo en donde a los hombres y mujeres homosexuales se les hacía burla pública, y eso estaba bien. En incontables programas de TV, revistas, radios, publicidades, la mesa de los domingos en familia y tantas otras expresiones de la cultura dominante, humillar a otro ser humano era entendido como lo adecuado, lo sensato y lo moral. Para ser parte de tan bondadosa e inclusiva sociedad, la persona gay únicamente tenía la obligación de hacer sus cosas gays en la intimidad de su casa y encargarse de que no se notara mucho, a ver si alguien de la familia consideraba que se le estuviera faltando el respeto. Públicamente todos entendían su lugar, muchos gays, como yo, crecimos aceptando obedientemente la moneda de cambio que se nos ofrecía. Humillación, vergüenza y censura a cambio del permiso de “vivir”.</p>
+      
+      <p>En 1995, una conversación adulta podía comenzar con alguien diciendo: «¿Viste lo que le pasó a la verdulera, con su hija? ¡Pobrecita!» (Pobrecita la verdulera, que aparentemente tiene la mancha gay en su familia).</p>
+      
+      <p>La gente es tan ignorante, tan ridícula y tan aferrada al molde de su cultura impuesta que la pregunta anterior podía ser respondida, probablemente, con: «Y, pero viste que los verduleros viajan mucho a Perú; andá a saber qué mosquito los pudo haber picado a esos chicos. Yo igual confío mucho en la medicina, todo el tiempo están inventando tratamientos nuevos. Pobre familia, Dios los cuide».</p>
+      
+      <p>Esa es la tercera historia de la que quiero hablarte: la gente puede ser muy estúpida. No deberíamos tener tan en cuenta todo lo que todos dicen. Pueden creer que no son estúpidos, pero lo son. Pueden creerse a sí mismos muy dueños de distintas verdades, verdades que les sirven para hacer todo tipo de cosas muy buenas, entre las cuales está decirles a los demás cómo tienen que vivir sus vidas y señalarlos con el dedo si, de acuerdo con sus valores, no lo hacen.</p>
+      
+      <p>Hay quienes nunca pensarán por sí mismos y defenderán que la Tierra es cuadrada y sostenida por 4 elefantes, solo porque otros se lo dijeron así. Definitivamente deberíamos aceptar querida Angie, que, cuando algunas personas deciden alejarse de nosotros, nos están haciendo, en realidad, un gran favor.</p>
+      
+      <p>Las personas no somos una sola cosa. Quienes amamos pueden tener gran bondad y también pueden ser unos estúpidos. No dejamos de amarlos por ello, pero creo que sí nos conviene aprender a distinguir si sus piezas son finales. Si no pudieron o no quisieron renovarlas, no es nuestro trabajo hacerlo, aun cuando darnos cuenta de esto nos duela. A veces lo mejor es dejar a los demás ser unos estúpidos, en paz.</p>
+      
+      <p>Aquello que los adultos, estúpidos o no, hacen y dicen mientras crecemos perdura toda la vida. Aún recuerdo a mi maestra de sexto grado de primaria, Alicia Martínez. Alicia nos enseñaba Matemáticas y Ciencias Naturales. Siempre me costaron las matemáticas; no las entendía y no las entiendo hoy en día tampoco. Sea cual fuere su rompecabezas, Alicia consideraba que la mejor forma de enseñarle a un niño de 11 años era gritándole. Llamaba por apellido y nos hacía subir a la pequeña tarima de madera que nos ayudaba a escribir en el pizarrón, como lo hacía ella. Nos dictaba un ejercicio y debíamos resolverlo para toda la clase. Si cometíamos un error, interrumpía. ¡¿QUÉ ESTÁS PONIENDO AHÍ?!, exclamaba con su fuerte voz. Sus ojos se entrecerraban, casi amenazantes, y los gritos continuaban. Pedía explicaciones. Preguntaba respecto de las reglas más básicas. Exigía que se materializasen saberes solo con su demanda: ¡¿DÓNDE ESTÁN LOS EJERCICIOS DE PRÁCTICA?! ¡BAJATE Y TRAEME YA TU CARPETA! No trataba mal a todos. Parecía tener un especial problema con algunos de nosotros, y lo hacía notar. Le teníamos mucho miedo.</p>
+      
+      <p>Nunca más olvidaré el trabajo sobre el cuerpo humano que hice para Ciencias Naturales. Si bien yo no podía salvarme de ella en Matemáticas (siempre me llamaba al frente y siempre me gritaba), sí podía hacer un buen trabajo en su otra materia. Había que escribir sobre el cuerpo humano y pasar a dar lección. La entrega y la lección oral llevaban notas separadas. Elegí describir tres sistemas del cuerpo: el sistema nervioso, el sistema circulatorio y el sistema respiratorio. Como futuro diseñador que sería, escribí el trabajo con lapiceras de 3 colores diferentes, un color para cada sistema. Hice títulos remarcados con resaltador y unos dibujitos al costado que representaban los nervios, los pulmones y las venas. Estudié la lección y me quedé con mi amigo Leonel durante el recreo, ensayando. Sabía que ella me llamaría.</p>
+      
+      <p>Cañas fue el primer apellido en ser convocado. Le di las hojas del trabajo en la mano, subí a la tarima y comencé a decir la lección. Casi sin terminar la primera oración escuché su chillona voz decir: «¡¿QUÉ ES ESO?! ¡¿QUÉ ES ESTO QUE ENTREGASTE?!». Aún recuerdo responderle: «Los tres sistemas que estudié, seño». «¡¡¿YO TE DIJE QUE PODÍAS USAR LAPICERA DE COLOR?! ¡¡SENTATE!! TENÉS UN UNO EN LAS DOS COSAS!».</p>
+      
+      <p>Aguanté todo lo que pude, te juro, Angie, que me aguanté, pero cuando el colectivo 273 bordeaba la plaza Máximo Paz, en 13 y 60, sentado en mi asiento rompí en un inconsolable llanto. Una señora se acercó y me preguntó qué me pasaba, por qué lloraba. Le respondí: «Me fue mal en un examen». Ella me devolvió una sonrisa y dijo: «Bueno, pero eso no es nada, esas cosas pasan, ya lo vas a aprobar, vas a ver».</p>
+      
+      <p>Una semana más tarde entregué el mismo exacto trabajo, pero redactado con lapicera formalmente azul. La señorita Alicia me lo devolvió a los pocos días, sin comentarios y con una nota de 10 escrita en el título. Nunca volvió a tomarme el oral.</p>
+      
+      <p>Tantos años después recuerdo con extremo detalle esta historia porque creo que yo lloraba no por desaprobar, sino por no poder obtener su cariño. Nunca sabré cuál era la trastornada pieza en la vida de esta mujer que creía aceptable tratar así a un niño, pero su maltrato fue más profundo y duradero que cualquier calificación. Todos merecemos ser amados, y dejar de amar a quienes nos lastiman es tan difícil como humano.</p>
+      
+      <p>Cuando pienso en Alicia vuelvo a decirme que no la resiento, de verdad no. Siento algo de pena por ella. No era feliz y detrás de todo el miedo que le tenía, yo lo notaba. Tal vez no somos todos tan afortunados. Hay personas que nunca podrán reemplazar sus piezas porque tienen una forma de ceguera que les impide siquiera poder verlas.</p>
+      
+      <p>La cuarta historia que quiero contarte es sobre la resistencia, la aceptación y el orgullo.</p>
+      
+      <p>Me han dicho que vos sos diferente, y que siempre lo fuiste. Me contaron que las primeras veces en una plaza insististe en usar la hamaca parada sobre ella, negándote a la imposición de usarla de manera convencional.</p>
+      
+      <p>Te veo y pienso en vos con gran admiración. A tus 15 años no tenés vergüenza de expresar quién sos y defenderlo, me hubiera encantado poder tener esa valentía en la vida. Me enorgullece que seas mi familia. Creo que es la primera vez que le digo eso a alguien. Con todo lo confuso, dinámico, excitante, contradictorio, difícil y magnético que es crecer y encontrarse a sí mismo, vos, tal vez sin saberlo, has demostrado tener un camino propio y elegido, distante, pero tan nítido como el amor y el dolor.</p>
+      
+      <p>Sos valiente y te admiro mucho porque quien te escribe es también un cobarde, alguien que aceptó la moneda de cambio que le fue impuesta. Todos tenemos nuestras piezas difíciles y también es parte de crecer aprender a aceptarlas encima, aunque no hayamos podido reemplazarlas.</p>
+      
+      <p>Ante lo incierto yo no encuentro ni busco un Dios, pero tampoco reniego de quien sí lo sienta. Cada quien tiene su camino y dichoso sea el que cada uno elija. Creo que la mayor dicha a la que podemos aspirar es a ser felices, sea como sea que elijamos hacerlo.</p>
+      
+      <p>Creo. Creo y anhelo. Creo y predigo que lo que te espera en la vida es más grande que cualquier palabra escrita. Creo que tendrás muchas sonrisas, muchos abrazos, muchos amores, mucha aventura y mucha vida bien vivida. Las lágrimas son también parte de ello. Sé feliz transitando aquellas historias que algún día te tocará contar a vos. Sé feliz como ahora, eligiendo tus pasos porque son tuyos y de nadie más.</p>
+      
+      <p>Si bien la fábula bíblica habla del amor de Dios, también desnuda la miseria humana. El mundo tiene mucha miseria disfrazada. Tal vez sean piezas enfermas, fragmentos corrompidos donde el diablo puso su impronta.</p>
+      
+      <p>Sean miserables si desean serlo. Miserables y ciegos, miserables y solos. Sean miserables y tristes, miserables y egoístas, miserables e incorrectos, miserables e ignorantes, miserables y equivocados; miserables aquellos a quienes no les fue concedida la gracia de verte completa, de verte lesbiana, mujer, persona, humana y maravillosamente perfecta tal como sos y como elijas ser.</p>
+      
+      <p>Solo puedo desearte, querida Angie, que seas muy feliz, que no pidas perdón por vivir feliz, que no pidas permiso para ser feliz, que nunca elijas esconder quién sos y que emprendas todos los caminos que quieras emprender y que tengas la libertad de cambiarlos si no te gustan. Que algún día, cuando veas hacia atrás, sonrías por haber vivido feliz, digna de morir como todos los demás, sin la respuesta al ¿por qué?, porque la pregunta no importe, porque la historia de tu propia vida sea la eternidad en sí misma y la que merezca ser contada a otros.</p>
+      
+      <p>Tu vida es tuya al igual que tus piezas. Elegilas a conciencia y hacelas brillar fuerte para que todo el mundo pueda verlas.</p>
+      
+      <p>¡Buena vida!</p>
+      
+      <p>Tu tío,<br>Rodrigo Facundo.</p>
+
+
+    </article>
+  </main>
+
+  <!-- Script para la interacción de los botones -->
+  <script>
+    let tamañoActual = 16; // Tamaño base de la fuente en píxeles
+
+    function cambiarTamanio(paso) {
+      tamañoActual += paso;
+      
+      // Límites para que el texto no quede diminuto ni gigante
+      if (tamañoActual < 12) tamañoActual = 12;
+      if (tamañoActual > 32) tamañoActual = 32;
+      
+      // Actualizamos la variable de CSS que maneja el tamaño en toda la página
+      document.documentElement.style.setProperty('--font-size-base', tamañoActual + 'px');
+    }
+
+    function toggleTheme() {
+      const body = document.body;
+      const btn = document.getElementById('btn-theme');
+      const iconMoon = document.getElementById('icon-moon');
+      const iconSun = document.getElementById('icon-sun');
+      
+      body.classList.toggle('dark-mode');
+      
+      // Intercambiamos los íconos de la luna y el sol según el modo
+      if (body.classList.contains('dark-mode')) {
+        iconMoon.style.display = 'none';
+        iconSun.style.display = 'block';
+        btn.title = 'Cambiar a Modo Claro';
+      } else {
+        iconMoon.style.display = 'block';
+        iconSun.style.display = 'none';
+        btn.title = 'Cambiar a Modo Oscuro';
+      }
+    }
+  </script>
+</body>
+</html>
