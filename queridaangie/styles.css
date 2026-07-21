@@ -100,16 +100,15 @@ body {
 .document-container {
   display: flex;
   justify-content: center;
-  padding: 70px 15px 40px 15px; /* Margen superior para no chocar con la barra */
+  padding: 70px 0 40px 0; /* Sin margen lateral en celulares */
 }
 
-/* Formato de la hoja de Word en Celulares (con mínimo margen) */
+/* Formato de la hoja en Celulares (ocupa toda la pantalla) */
 .document-content {
   background-color: var(--paper-bg);
   width: 100%;
   max-width: 850px;
-  padding: 25px 15px; 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 25px 20px; /* Margen interno para que el texto respire */
   transition: background-color 0.3s;
 }
 
@@ -128,13 +127,18 @@ body {
 
 /* Formato de la hoja de Word en Computadoras (Amplios márgenes) */
 @media (min-width: 768px) {
+  .document-container {
+    padding: 70px 15px 40px 15px; /* Devolvemos un margen lateral al contenedor padre */
+  }
+  
   .document-content {
     /* Simulamos los márgenes laterales y superiores típicos de Word */
     padding: 80px 100px; 
     margin-top: 30px; 
     margin-bottom: 40px;
     border-radius: 4px;
-    /* Sombra un poco más fuerte para que parezca una hoja apoyada */
+    /* Sombra para que parezca una hoja apoyada en el fondo gris */
     box-shadow: 0px 8px 25px rgba(0,0,0,0.1); 
   }
+
 }
