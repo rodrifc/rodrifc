@@ -1,30 +1,23 @@
-/* Variables y configuración base */
+/* Variables y colores base */
 :root {
-  --bg-color: #f4f4f9;
+  --bg-color: #e6e6e6; /* Fondo grisáceo estilo "escritorio" */
   --paper-bg: #ffffff;
   --text-color: #222222;
-  --border-color: #e0e0e0;
-  --btn-bg: rgba(0, 0, 0, 0.05);
+  --top-bar-bg: #f8f9fa; /* Barra blanco claro */
   --btn-text: #333333;
-  --font-size-base: 1rem; /* ~16px fluido por defecto */
+  --font-size-base: 16px; 
 }
 
-/* Modo Oscuro */
+/* Colores para Modo Oscuro */
 body.dark-mode {
-  --bg-color: #121212;
-  --paper-bg: #1e1e1e;
+  --bg-color: #0a0a0a; /* Fondo muy oscuro */
+  --paper-bg: #1e1e1e; /* Hoja gris oscuro */
   --text-color: #e0e0e0;
-  --border-color: #333333;
-  --btn-bg: rgba(255, 255, 255, 0.1);
+  --top-bar-bg: #121212; /* Barra casi negra */
   --btn-text: #ffffff;
 }
 
-/* Tamaño de letra ampliado */
-body.font-large {
-  --font-size-base: 1.25rem;
-}
-
-/* Estilos generales */
+/* Reseteo general */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,66 +28,92 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-base); /* Toma el valor del script en el HTML */
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Barra transparente superior */
+/* Navbar súper limpia y sin bordes llamativos */
 .top-bar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px); /* Efecto vidriado */
-  -webkit-backdrop-filter: blur(8px);
+  padding: 12px 30px;
+  background-color: var(--top-bar-bg);
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  align-items: center;
+  gap: 15px;
   z-index: 1000;
-}
-
-body.dark-mode .top-bar {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* Botones de la barra */
-.nav-btn {
-  background: var(--btn-bg);
-  color: var(--btn-text);
-  border: 1px solid var(--border-color);
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-family: inherit;
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.nav-btn:hover {
-  opacity: 0.8;
-}
-
-/* Contenedor del documento (Hoja) */
-.document-container {
-  display: flex;
-  justify-content: center;
-  padding: 70px 15px 40px 15px; /* Margen superior para no solapar la barra */
-}
-
-.document-content {
-  background-color: var(--paper-bg);
-  width: 100%;
-  max-width: 800px; /* Ancho similar a hoja A4/Word en PC */
-  padding: 20px; /* Margen mínimo en pantallas chicas */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  border-radius: 2px;
   transition: background-color 0.3s;
 }
 
-/* Espaciado entre párrafos e itinerarios del texto */
+.controls-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Botones disimulados que se funden con la barra */
+.icon-btn {
+  background: transparent;
+  color: var(--btn-text);
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.4; /* Muy suaves por defecto */
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.icon-btn:hover {
+  opacity: 1; /* Solo se iluminan/aclaran al pasar el mouse */
+}
+
+.icon-btn:active {
+  transform: scale(0.92);
+}
+
+/* Letra A elegante y fina */
+.letra-icono {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 300; /* Letra mucho más fina */
+  font-size: 1.1em;
+  color: var(--btn-text);
+  margin: 0 5px;
+  opacity: 0.6;
+  user-select: none;
+}
+
+/* Divisor estético entre controles */
+.divider {
+  width: 1px;
+  height: 18px;
+  background-color: var(--btn-text);
+  opacity: 0.15;
+}
+
+/* Contenedor principal para acomodar la "hoja" */
+.document-container {
+  display: flex;
+  justify-content: center;
+  padding: 70px 15px 40px 15px; /* Margen superior para no chocar con la barra */
+}
+
+/* Formato de la hoja de Word en Celulares (con mínimo margen) */
+.document-content {
+  background-color: var(--paper-bg);
+  width: 100%;
+  max-width: 850px;
+  padding: 25px 15px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s;
+}
+
+/* Espaciados del texto */
 .document-content p {
   margin-bottom: 1.2em;
 }
@@ -107,10 +126,15 @@ body.dark-mode .top-bar {
   line-height: 1.3;
 }
 
-/* Adaptación para pantallas medianas y de escritorio */
+/* Formato de la hoja de Word en Computadoras (Amplios márgenes) */
 @media (min-width: 768px) {
   .document-content {
-    padding: 60px 80px; /* Simula los márgenes anchos de Word */
-    margin-top: 20px;
+    /* Simulamos los márgenes laterales y superiores típicos de Word */
+    padding: 80px 100px; 
+    margin-top: 30px; 
+    margin-bottom: 40px;
+    border-radius: 4px;
+    /* Sombra un poco más fuerte para que parezca una hoja apoyada */
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.1); 
   }
 }
